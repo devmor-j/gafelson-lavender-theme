@@ -1,33 +1,48 @@
-# Dark Lavender × Gafelson (Zed theme)
+# Gafelson Lavender
 
-A **Zed editor theme** — the set of rules that define how Zed looks: its
-backgrounds, text, syntax colors, and UI. This theme blends **two** source
-themes into one:
+A **Zed editor theme** — a dark theme blending the native **Gafelson** structure with **Dark Lavender** accents.
 
-- **Dark Lavender** — a VS Code dark theme with purple/lavender accents.
-- **Gafelson** — a native Zed theme, used as the structural base.
+<img src="assets/theme-sample.png" width="344" alt="Gafelson Lavender preview">
 
-## Layout
+[View full size (850×1183)](https://github.com/devmor-j/gafelson-lavender-theme/blob/main/assets/theme-sample.png)
+
+## Install
+
+1. Open Zed **Settings** (`Ctrl/Cmd + ,`)
+2. Go to **Themes**
+3. Search for **Gafelson Lavender** and select it
+
+Or from the command line:
+
+```sh
+zed extensions install gafelson-lavender-theme
+```
+
+## Development
+
+Only `themes/gafelson-lavender.json` is edited — everything else is read-only input:
 
 ```
-reference/          # the two source themes — READ ONLY, never edit
+reference/          # source themes — READ ONLY
   dark-lavender-default.json    # VS Code Dark Lavender
   gafelson-dark-nomal.json      # Zed Gafelson
-schema/             # the official Zed theme schema — READ ONLY
-  zed-theme-schema-v0.2.0.json
+schema/             # official Zed theme schema — READ ONLY
 themes/             # THE OUTPUT — the only place to edit
   gafelson-lavender.json
 ```
 
-## Rules
+Rules:
 
 - **Only edit** `themes/gafelson-lavender.json`.
 - `reference/` and `schema/` are **read-only** — never change them.
-- When choosing colors, prefer **Gafelson** (the native Zed theme)
-  over Dark Lavender.
+- When choosing colors, prefer **Gafelson** (the native Zed theme) over Dark Lavender.
 
-## Make sure it's still valid
+Validate the JSON:
 
-```
+```sh
 python3 -c "import json; json.load(open('themes/gafelson-lavender.json')); print('ok')"
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
