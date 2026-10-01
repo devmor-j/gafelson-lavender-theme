@@ -8,15 +8,9 @@ A **Zed editor theme** — a dark theme blending the native **Gafelson** structu
 
 ## Install
 
-1. Open Zed **Settings** (`Ctrl/Cmd + ,`)
-2. Go to **Themes**
-3. Search for **Gafelson Lavender** and select it
-
-Or from the command line:
-
-```sh
-zed extensions install gafelson-lavender-theme
-```
+1. Open the **Extensions** view (`Ctrl/Cmd + Shift + X`)
+2. Search for **Gafelson Lavender**
+3. Click **Install**
 
 ## Development
 
